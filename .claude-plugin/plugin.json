@@ -1,0 +1,8 @@
+{
+  "name": "claude-quest",
+  "version": "0.1.0",
+  "description": "An idle ARPG that plays itself above the prompt: your work in Claude powers the fights, camp life skills run while you are away. Zero tokens.",
+  "author": { "name": "finalpantasy" },
+  "types": "./types/index.d.ts",
+  "license": "MIT"
+}
