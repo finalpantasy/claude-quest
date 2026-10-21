@@ -1,5 +1,7 @@
 # Claude Quest
 
+[![Support me on Ko-fi](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/finalpantasy)
+
 An idle ARPG that plays itself above your prompt in Claude Code. Your real work in Claude powers the fights; while you are away, your hero camps and fishes, mines and digs. It never calls a model, so it costs zero tokens.
 
 > Early access: built on Claude Code mods (function hooks), which may change between releases. Expect frequent updates.
@@ -44,3 +46,7 @@ A fan-made mod. Not made, endorsed or supported by Anthropic.
 ## License
 
 MIT
+
+## Support
+
+Free hobby project. If it helps you, you can [buy me a coffee on Ko-fi](https://ko-fi.com/finalpantasy). Thank you!
