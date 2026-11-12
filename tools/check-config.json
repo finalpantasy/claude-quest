@@ -1,0 +1,9 @@
+{
+  "commands": [
+    { "id": "validate", "argv": ["{python}", "tools/plugin_checks.py", "validate", "{run_dir}/validate.json"], "timeout_seconds": 120, "report": "{run_dir}/validate.json", "format": "json" },
+    { "id": "tests", "argv": ["{python}", "tools/plugin_checks.py", "tests", "{run_dir}/tests.json"], "timeout_seconds": 300, "report": "{run_dir}/tests.json", "format": "json" },
+    { "id": "typecheck", "argv": ["{python}", "tools/plugin_checks.py", "typecheck", "{run_dir}/typecheck.json"], "timeout_seconds": 300, "report": "{run_dir}/typecheck.json", "format": "json" }
+  ],
+  "extra_inputs": [],
+  "exclude_inputs": ["docs", "backlog", "STATE.md", "AGENTS.md", "CLAUDE.md"]
+}
