@@ -7,48 +7,86 @@ export const ACTS: Act[] = [
   {
     name: 'Act I: The Fresh Clone', sky: '#1d2433', ground: '#3b3226',
     zones: ['The Repo Root', 'Cellar of node_modules', 'The Forgotten Branches', 'Cathedral of Config', 'The Lint Fields'],
-    foes: ['Null Pointer', 'Off-By-One', 'Typo Imp', 'Unused Import', 'Stray Semicolon', 'Magic Number', 'Dead Code Zombie', 'TODO Wraith'],
+    foes: ['Null Pointer', 'Off-By-One', 'Typo Imp', 'Unused Import', 'Stray Semicolon', 'Magic Number', 'Dead Code Zombie', 'TODO Wraith', 'Segfault Slime', 'Linter Imp', 'Hollow Skull', 'Null Bat'],
     boss: 'The Butcher of Builds',
   },
   {
     name: 'Act II: The Dependency Wars', sky: '#3a2a1a', ground: '#7a5a2e',
     zones: ['Desert of Deprecation', 'Lockfile Oasis', 'Tomb of Left-Pad', 'The Version Pyramids', 'Peer Dependency Palace'],
-    foes: ['Breaking Change', 'Transitive Dep', 'Phantom Package', 'Semver Scarab', 'Postinstall Script', 'Polyfill Mummy', 'Diamond Dependency', 'CVE Jackal'],
+    foes: ['Breaking Change', 'Transitive Dep', 'Phantom Package', 'Semver Scarab', 'Postinstall Script', 'Polyfill Mummy', 'Diamond Dependency', 'CVE Jackal', 'Dependency Spider', 'Cache Scarab', 'Wrapper Mummy', 'Fuzz Jackal'],
     boss: 'Duriel, Lord of node_modules',
   },
   {
     name: 'Act III: Merge Hell', sky: '#102a1e', ground: '#24402c',
     zones: ['The Rebase Swamps', 'Conflict Marshes', 'Temple of the Detached HEAD', 'Cherry-Pick Jungle', 'The Force-Push Cliffs'],
-    foes: ['Merge Conflict', 'Detached HEAD', 'Rebase Ghoul', 'Stash Hoarder', 'Squash Golem', 'Orphan Commit', 'Blame Specter', 'Hook Lurker'],
+    foes: ['Merge Conflict', 'Detached HEAD', 'Rebase Ghoul', 'Stash Hoarder', 'Squash Golem', 'Orphan Commit', 'Blame Specter', 'Hook Lurker', 'Rebase Knight', 'Bonehead Merge', 'Toad of Types', 'Callback Kraken'],
     boss: 'Mephisto the Monorepo',
   },
   {
     name: 'Act IV: Production', sky: '#2a0d0d', ground: '#4a1c14',
     zones: ['The Staging Gates', 'Plains of Hotfix', 'River of Logs', 'The Pager Spire', 'The 3AM Sanctum'],
-    foes: ['Heisenbug', 'Race Condition', 'Memory Leak', 'Deadlock Demon', 'Cache Stampede', 'Timezone Fiend', 'Flaky Test', 'Cron Horror'],
+    foes: ['Heisenbug', 'Race Condition', 'Memory Leak', 'Deadlock Demon', 'Cache Stampede', 'Timezone Fiend', 'Flaky Test', 'Cron Horror', 'Pager Demon', 'Zombie Process', 'Hornet of Hotfix', 'Spinlock Spider'],
     boss: 'Diablo, the Prod Incident',
   },
   {
     name: 'Act V: The Legacy Mountains', sky: '#1a2236', ground: '#5c6474',
     zones: ['The COBOL Peaks', 'Mainframe Halls', 'The Frozen Monolith', 'Worldstone Server Room', "The Ancients' Datacenter"],
-    foes: ['Spaghetti Golem', 'God Object', 'Singleton Cultist', 'XML Yeti', 'SOAP Elemental', 'Y2K Revenant', 'Goto Gargoyle', 'Stored Procedure Shaman'],
+    foes: ['Spaghetti Golem', 'God Object', 'Singleton Cultist', 'XML Yeti', 'SOAP Elemental', 'Y2K Revenant', 'Goto Gargoyle', 'Stored Procedure Shaman', 'Monolith Golem', 'Legacy Skeleton', 'Ice Cache Yeti', 'Mutex Golem'],
     boss: 'Baal, Lord of Technical Debt',
   },
 ]
 
 /** The endgame: the Atlas of Repos, map tiers without end. */
 export const ATLAS = { sky: '#1b0f2e', ground: '#2e1a4a', foes: ACTS.flatMap(a => a.foes) }
-export const MAPS = ['Monorepo Map', 'Microservice Maze', 'Serverless Void', 'Kubernetes Cluster', 'Legacy Vault', 'Data Lake', 'Spaghetti Labyrinth', 'Sprint Graveyard', 'Hackathon Ruins', 'Staging Mirror', 'Incident Bridge', "The Shaper's Repo"]
-export const MAP_BOSSES = ['The Infinite Loop', 'Kernel Panic Incarnate', 'The Undying Monolith', 'Scope Creep, the Ever-Growing', 'The Midnight Deploy', 'The Unreproducible', 'The Shaper of Specs', 'The Elder Codebase']
+export const MAPS = ['Monorepo Map', 'Microservice Maze', 'Serverless Void', 'Kubernetes Cluster', 'Legacy Vault', 'Data Lake', 'Spaghetti Labyrinth', 'Sprint Graveyard', 'Hackathon Ruins', 'Staging Mirror', 'Incident Bridge', "The Shaper's Repo", 'Feature Flag Forest', 'Webhook Wastes', 'Regex Catacombs', 'Dotfile Barrens', 'The Changelog Archive', 'Cron Clocktower', 'Sandbox Dunes', 'Firewall Ramparts', 'Shard Abyss', 'The Retro Board', 'Release Train Yard', 'Rollback Rapids', 'Frozen Branch', 'Tech Debt Bog', 'Zombie Process Crypt', 'Memory Leak Caldera', 'Dependency Jungle', 'Cold Storage Tundra', 'Race Condition Raceway', 'Deadlock Glacier', 'Off-by-One Orchard', 'Null Pointer Swamp', 'Throttled Highlands', 'Hotfix Hellmouth']
+export const MAP_BOSSES = ['The Infinite Loop', 'Kernel Panic Incarnate', 'The Undying Monolith', 'Scope Creep, the Ever-Growing', 'The Midnight Deploy', 'The Unreproducible', 'The Shaper of Specs', 'The Elder Codebase', 'The Eternal Standup', 'Bikeshed Colossus', 'The Ticket That Reopens', 'Queen of the Backlog', 'The Hundred-Line Diff', 'Warden of the Firewall', 'The Phantom Requirement', 'The Last Migration', 'The Flaky Test, Twice Removed', 'The Orphaned Branch', 'Lord of the Lockfile', 'The Silent Failure', 'The Wontfix Wyrm', 'The Pager at 3 AM']
 
-export const ADJ = ['Feral', 'Rabid', 'Undocumented', 'Deprecated', 'Flaky', 'Legacy', 'Cursed', 'Recursive', 'Orphaned', 'Unhandled', 'Leaky', 'Zombie', 'Minified', 'Haunted', 'Untested', 'Mutable', 'Nullable', 'Async', 'Hardcoded', 'Global']
+export const ADJ = ['Feral', 'Rabid', 'Undocumented', 'Deprecated', 'Flaky', 'Legacy', 'Cursed', 'Recursive', 'Orphaned', 'Unhandled', 'Leaky', 'Zombie', 'Minified', 'Haunted', 'Untested', 'Mutable', 'Nullable', 'Async', 'Hardcoded', 'Global', 'Overengineered', 'Copy-Pasted', 'Unreviewed', 'Hot-Reloaded', 'Thread-Unsafe', 'Off-Spec', 'Circular', 'Bloated', 'Uncommented', 'Bikeshedded', 'Vendored', 'Shadowed', 'Memoized', 'Stale', 'Overfit', 'Yanked']
 
-/** Elite affixes: what each does to the fight. */
-export const ELITE: { name: string; hp?: number; dmg?: number }[] = [
-  { name: 'Fast', dmg: 0.3 }, { name: 'Extra Health', hp: 0.6 }, { name: 'Vampiric', hp: 0.3 }, { name: 'Molten', dmg: 0.4 },
-  { name: 'Frozen', dmg: 0.25 }, { name: 'Arcane Enchanted', dmg: 0.45 }, { name: 'Shielding', hp: 0.45 }, { name: 'Teleporter', hp: 0.2 },
-  { name: 'Plagued', dmg: 0.3 }, { name: 'Jailer', dmg: 0.2 }, { name: 'Horde', hp: 0.5 }, { name: 'Mortar', dmg: 0.35 },
-  { name: 'Waller', hp: 0.25 }, { name: 'Illusionist', hp: 0.4 }, { name: 'Thunderstorm', dmg: 0.5 }, { name: 'Juggernaut', hp: 1 },
+/** Elite affixes: what each does to the fight (more life, more damage, more monsters) and the line the log tells about it. */
+export type EliteMod = { name: string; hp?: number; dmg?: number; count?: number; text: string }
+export const ELITE: EliteMod[] = [
+  { name: 'Fast', dmg: 0.3, text: 'strikes before you finish typing' }, { name: 'Extra Health', hp: 0.6, text: 'has far more lines than it should' },
+  { name: 'Vampiric', hp: 0.3, text: 'drinks a little life with every bite' }, { name: 'Molten', dmg: 0.4, text: 'leaves burning pools behind' },
+  { name: 'Frozen', dmg: 0.25, text: 'drops ice that locks you in place' }, { name: 'Arcane Enchanted', dmg: 0.45, text: 'spins a beam of pure syntax' },
+  { name: 'Shielding', hp: 0.45, text: 'flickers behind a bubble' }, { name: 'Teleporter', hp: 0.2, text: 'is never where you swing' },
+  { name: 'Plagued', dmg: 0.3, text: 'spreads a cloud of tiny bugs' }, { name: 'Jailer', dmg: 0.2, text: 'locks you in a cage of brackets' },
+  { name: 'Horde', hp: 0.5, text: 'brought friends' }, { name: 'Mortar', dmg: 0.35, text: 'lobs exceptions from afar' },
+  { name: 'Waller', hp: 0.25, text: 'builds walls of red tape' }, { name: 'Illusionist', hp: 0.4, text: 'splits into fake copies' },
+  { name: 'Thunderstorm', dmg: 0.5, text: 'calls lightning down on your head' }, { name: 'Juggernaut', hp: 1, text: 'shrugs off nearly everything' },
+  { name: 'Rate-Limited', hp: 0.45, text: 'answers only every third hit' }, { name: 'Auto-Scaling', hp: 0.5, text: 'grows a replica when hurt' },
+  { name: 'Self-Healing', hp: 0.5, text: 'restarts itself mid-fight' }, { name: 'Retrying', dmg: 0.4, text: 'tries the same attack again, and again' },
+  { name: 'Memoized', dmg: 0.35, text: 'remembers every dodge' }, { name: 'Load-Balanced', hp: 0.4, text: 'spreads the damage across the pack' },
+  { name: 'Obfuscated', hp: 0.4, text: 'is hard to read and harder to hit' }, { name: 'Hot-Patched', dmg: 0.45, text: 'changes its moves at runtime' },
+  { name: 'Overclocked', dmg: 0.45, text: 'hits hard and runs hot' }, { name: 'Containerized', hp: 0.45, text: 'hides behind three layers of isolation' },
+  { name: 'Root Access', dmg: 0.5, text: 'ignores your permissions' }, { name: 'Garbage-Collected', hp: 0.3, text: 'vanishes and comes back tidied' },
+  { name: 'Splitting', hp: 0.15, count: 1, text: 'forks into one more on the first hit' }, { name: 'Infinite Scroll', hp: 0.6, text: 'never seems to reach the end' },
+]
+
+/** Named monsters: one in two uniques in a place is one of these, with its own affixes, a line it says and a better drop. act -1 is the Atlas. */
+export type NamedFoe = { act: number; name: string; base: string; mods: string[]; line: string }
+export const NAMED: NamedFoe[] = [
+  { act: 0, name: 'Old Greg the Gitignore', base: 'Unused Import', mods: ['Teleporter', 'Illusionist'], line: 'You cannot see me. I was never committed.' },
+  { act: 0, name: 'Captain Semicolon', base: 'Stray Semicolon', mods: ['Fast', 'Retrying'], line: 'Every line ends with me!' },
+  { act: 0, name: 'The Lint Baron', base: 'Linter Imp', mods: ['Jailer', 'Waller'], line: 'Trailing whitespace. Unforgivable.' },
+  { act: 1, name: 'Lady Leftpad', base: 'Phantom Package', mods: ['Vampiric', 'Shielding'], line: 'Eleven lines, and the world falls with me.' },
+  { act: 1, name: 'The Lockfile Pharaoh', base: 'Polyfill Mummy', mods: ['Extra Health', 'Containerized'], line: 'Pinned. Forever.' },
+  { act: 1, name: 'Major Version Zero', base: 'Breaking Change', mods: ['Hot-Patched', 'Molten'], line: 'Nothing I promise is stable.' },
+  { act: 2, name: 'Mother of Conflicts', base: 'Merge Conflict', mods: ['Splitting', 'Horde'], line: 'Come to mother. Both versions of you.' },
+  { act: 2, name: 'Sir Force-Push', base: 'Rebase Knight', mods: ['Root Access', 'Fast'], line: 'History is what I say it is.' },
+  { act: 2, name: 'The Stash Witch', base: 'Stash Hoarder', mods: ['Garbage-Collected', 'Plagued'], line: 'I keep everything you forgot.' },
+  { act: 3, name: 'The 3AM Pager', base: 'Pager Demon', mods: ['Thunderstorm', 'Retrying'], line: 'Wake up. It is happening again.' },
+  { act: 3, name: 'Count Heisen', base: 'Heisenbug', mods: ['Teleporter', 'Obfuscated'], line: 'Look at me and I am gone.' },
+  { act: 3, name: 'Lord of Leaks', base: 'Memory Leak', mods: ['Auto-Scaling', 'Vampiric'], line: 'I only ever grow.' },
+  { act: 4, name: 'The COBOL Elder', base: 'Y2K Revenant', mods: ['Juggernaut', 'Frozen'], line: 'I ran your bank before you were born.' },
+  { act: 4, name: 'Grand Singleton', base: 'Singleton Cultist', mods: ['Shielding', 'Arcane Enchanted'], line: 'There can be only one instance.' },
+  { act: 4, name: 'The Stored One', base: 'Stored Procedure Shaman', mods: ['Mortar', 'Self-Healing'], line: 'The logic lives in the database now.' },
+  { act: -1, name: 'The Product Owner', base: 'God Object', mods: ['Infinite Scroll', 'Waller'], line: 'Just one more small change.' },
+  { act: -1, name: 'Shadow IT', base: 'Phantom Package', mods: ['Obfuscated', 'Root Access'], line: 'Nobody approved me. Nobody can remove me.' },
+  { act: -1, name: 'The Flaky One', base: 'Flaky Test', mods: ['Teleporter', 'Retrying'], line: 'Passed locally.' },
+  { act: -1, name: 'The Debt Collector', base: 'Spaghetti Golem', mods: ['Juggernaut', 'Load-Balanced'], line: 'The interest is due.' },
+  { act: -1, name: 'The Microservice Hydra', base: 'Merge Conflict', mods: ['Splitting', 'Auto-Scaling'], line: 'Cut one and two more deploy.' },
+  { act: -1, name: 'The Unread Email', base: 'Dead Code Zombie', mods: ['Infinite Scroll', 'Frozen'], line: 'Per my last message.' },
 ]
 
 export const VERBS = ['Executing', 'Debugging', 'Refactoring', 'Garbage-collecting', 'Profiling', 'Bisecting', 'Patching', 'Exorcising', 'Rubber-ducking', 'Deprecating', 'Sandboxing', 'Unit-testing']
@@ -60,13 +98,13 @@ export const BASES: Record<Slot, string[]> = {
   offhand: ['Rubber Duck Shield', 'Second Monitor', 'Orb of Coffee', 'Quiver of Tabs', 'Grimoire of Docs'],
   head: ['Noise-Cancelling Helm', 'Hoodie Hood', 'Thinking Cap', 'VR Visor', 'Headset of Standups'],
   chest: ['Hoodie of Holding', 'Flannel Plate', 'Kevlar Cardigan', 'Chainmail of Linting', 'Conference Tee'],
-  hands: ['Wrist Brace Gauntlets', 'Fingerless Gloves', 'Carpal Wraps', 'Gaming Mitts'],
-  waist: ['Lanyard Belt', 'Utility Belt of USB', 'Cable Sash', 'Belt of Dongles'],
-  legs: ['Cargo Pants', 'Sweatpants of Comfort', 'Jorts', 'Standing-Desk Greaves'],
-  feet: ['Crocs', 'Sandals of Standup', 'Slippers of Remote Work', 'Socks of Determinism'],
-  neck: ['Lanyard Amulet', 'YubiKey Pendant', 'Badge of Access', 'Locket of Secrets'],
-  ring: ['Ring of Two-Factor', 'Band of Bandwidth', 'Loop of Recursion', 'Signet of Signing'],
-  ring2: ['Ring of Two-Factor', 'Band of Bandwidth', 'Loop of Recursion', 'Signet of Signing'],
+  hands: ['Wrist Brace Gauntlets', 'Fingerless Gloves', 'Carpal Wraps', 'Gaming Mitts', 'Anti-Static Gloves', 'Mouse-Hand Bracers', 'Knuckles of the Numpad'],
+  waist: ['Lanyard Belt', 'Utility Belt of USB', 'Cable Sash', 'Belt of Dongles', 'Cable Tie Girdle', 'Fanny Pack of Snacks', 'Belt of Many Lanyards'],
+  legs: ['Cargo Pants', 'Sweatpants of Comfort', 'Jorts', 'Standing-Desk Greaves', 'Pajama Bottoms of Remote', 'Hackathon Shorts', 'Ergonomic Chair Greaves'],
+  feet: ['Crocs', 'Sandals of Standup', 'Slippers of Remote Work', 'Socks of Determinism', 'Boots of Long Commutes', 'Hoverboard Sabatons', 'Mismatched Socks'],
+  neck: ['Lanyard Amulet', 'YubiKey Pendant', 'Badge of Access', 'Locket of Secrets', 'Visitor Lanyard', 'Talisman of the Monitor Arm', 'Charm of the Coffee Bean'],
+  ring: ['Ring of Two-Factor', 'Band of Bandwidth', 'Loop of Recursion', 'Signet of Signing', 'Band of Bitwise', 'Ring of the Keychain', 'Ring of Least Privilege'],
+  ring2: ['Ring of Two-Factor', 'Band of Bandwidth', 'Loop of Recursion', 'Signet of Signing', 'Band of Bitwise', 'Ring of the Keychain', 'Ring of Least Privilege'],
 }
 
 /** Each stat as an affix: how big a roll is at item level 1 and 70, and the words a magic item takes from it. */
@@ -115,6 +153,13 @@ export const POWERS: Power[] = [
   { id: 'yubi', item: 'Key of Hardware Trust', slot: 'neck', g: 'j', text: 'Unphishable: +60% elite damage', fx: { elite: 60 } },
   { id: 'lambda', item: 'Lambda Staff of the Ancients', slot: 'weapon', g: 'w', text: 'Pure functions only: +8% crit, +40% crit damage', fx: { crit: 8, critDmg: 40 } },
   { id: 'kanban', item: 'Cloak of the Kanban', slot: 'head', g: 'a', text: 'Work in progress limited: +40% damage', fx: { dmg: 40 } },
+  { id: 'precommit', item: 'Pre-Commit Hook', slot: 'hands', g: 'a', text: 'Nothing bad gets through: +25% resist', fx: { resist: 25 } },
+  { id: 'pair', item: 'Pair Programmer Locket', slot: 'neck', g: 'j', text: 'Two heads, one keyboard: +30% damage, +10% speed', fx: { dmg: 30, speed: 10 } },
+  { id: 'oncall', item: 'Pager of the On-Call', slot: 'waist', g: 'a', text: 'Always awake: +25% life, +2% life steal', fx: { life: 25, steal: 2 } },
+  { id: 'bisect', item: 'Blade of Git Bisect', slot: 'weapon', g: 'w', text: 'Halves the search every swing: x1.5 damage', fx: { mult: 0.5 } },
+  { id: 'darkmode', item: 'Visor of Dark Mode', slot: 'head', g: 'a', text: 'Easy on the eyes: +10% crit chance, +20% crit damage', fx: { crit: 10, critDmg: 20 } },
+  { id: 'eventloop', item: 'Ring of the Event Loop', slot: 'ring', g: 'j', text: 'Never blocks: +20% attack speed', fx: { speed: 20 } },
+  { id: 'standup', item: 'Treads of the Short Standup', slot: 'feet', g: 'a', text: 'In and out in five minutes: +15% speed, 10% less damage taken', fx: { speed: 15, dr: 10 } },
 ]
 
 /** Sets: four pieces each, a bonus at two and at four worn. */
@@ -135,6 +180,11 @@ export const SETS: GearSet[] = [
     id: 'tenx', name: "The Ten-X Engineer's Kit",
     pieces: [{ slot: 'weapon', name: 'Keyboard of Ten Fingers' }, { slot: 'offhand', name: 'Third Monitor' }, { slot: 'ring', name: 'Band of Ninety-Hour Weeks' }, { slot: 'ring2', name: 'Loop of Burnout' }],
     two: { crit: 10 }, four: { mult: 2.5, dr: -20 }, twoText: '+10% crit chance', fourText: 'x3.5 damage, 20% more damage taken',
+  },
+  {
+    id: 'oncall', name: 'The On-Call Rotation',
+    pieces: [{ slot: 'head', name: 'Headset of 3AM' }, { slot: 'hands', name: 'Gloves of the Runbook' }, { slot: 'legs', name: 'Pajama Greaves' }, { slot: 'waist', name: 'Belt of Escalation' }],
+    two: { resist: 20 }, four: { mult: 2, life: 30 }, twoText: '+20% resist', fourText: 'x3 damage, +30% life',
   },
 ]
 
@@ -328,4 +378,71 @@ export const ACHIEVEMENTS: AchDef[] = [
   { id: 'night', name: 'Night Owl', text: 'Work between 2am and 5am' },
   { id: 'million', name: 'Millionaire', text: 'Hold 1,000,000 gold' },
   { id: 'party', name: 'Full Party', text: 'Have 3 followers' },
+  { id: 'named1', name: 'Named and Shamed', text: 'Slay a named monster' },
+  { id: 'named10', name: 'Most Wanted', text: 'Slay 10 different named monsters' },
+  { id: 'best25', name: 'Field Notes', text: 'Slay 25 different kinds of monster' },
+  { id: 'best60', name: 'Naturalist', text: 'Slay 60 different kinds of monster' },
+  { id: 'mods3', name: 'Triple Threat', text: 'Slay an elite with three or more affixes' },
+  { id: 'tales25', name: 'Storyteller', text: 'Live through 25 random tales' },
+  { id: 'tales1000', name: 'Legend of the Log', text: 'Live through 1,000 random tales' },
+  { id: 'crops25', name: 'Green Claws', text: 'Harvest 25 crops' },
+  { id: 'crops250', name: 'Crop Rotation', text: 'Harvest 250 crops' },
+  { id: 'trips10', name: 'Postcards Home', text: 'Welcome back 10 expeditions' },
+  { id: 'trips100', name: 'Expedition Office', text: 'Welcome back 100 expeditions' },
+  { id: 'titles5', name: 'Wandering Arsenal', text: 'Hold 5 different titles' },
+  { id: 'titles20', name: 'Jack of All Trades', text: 'Hold 20 different titles' },
+  { id: 'lands7', name: 'Tourist', text: 'Visit 7 kinds of land' },
+  { id: 'lands14', name: 'Seen It All', text: 'Visit all 14 kinds of land' },
+  { id: 'revenge', name: 'Served Cold', text: 'Defeat a nemesis' },
+  { id: 'revenge10', name: 'Grudge Keeper', text: 'Defeat 10 nemeses' },
+  { id: 'streak250', name: 'Hot Streak', text: 'Win 250 fights in a row' },
+  { id: 'streak1000', name: 'Five Nines', text: 'Win 1,000 fights in a row' },
+  { id: 'pets1', name: 'Egg Timer', text: 'Hatch a pet from an expedition egg' },
+  { id: 'pets5', name: 'Menagerie', text: 'Hatch 5 pets' },
+  { id: 'petFinal', name: 'Final Form', text: 'Raise a pet to its last stage' },
 ]
+
+/** task-13 flavor. Picked by the clock, never by the game's RNG, so they change nothing else. */
+export const BOSS_TAUNTS = ['Your tests cannot save you.', 'I was here before your first commit.', 'I have seen your git history.', 'Merge me if you dare.', 'Roll back? There is no back.', 'Your pull request will never be approved.', 'I run in production. You run in staging.', 'For every fix you make, I make two bugs.', 'I am the reason it works on my machine.', 'Your coverage is showing.', 'I deprecate heroes like you.', 'Bring your linter. I will wait.', 'I have no tests and no fear.', 'You cannot hotfix destiny.', 'I live in every branch.', 'Your stack trace ends with me.', 'Who approved this hero?', 'I was written on a Friday.', 'Your cache is stale, and so are you.', 'I am undocumented, and unbeatable.', 'Ten thousand lines, zero comments. Fear me.', 'Not even a revert can undo me.', 'I am the TODO you never did.', 'Let us settle this in code review.']
+export const ACT_INTRO: string[][] = [
+  ['The repo is fresh. The hero is fresher.', 'A clean clone. It will not stay clean for long.', 'Somewhere below, a build is already failing.'],
+  ['The lockfile trembles. Versions march to war.', 'Every package wants a different version of everything.', 'Sand, ruins and very old dependencies ahead.'],
+  ['The branches have diverged. Badly.', 'Conflict markers glow in the swamp mist.', 'Nobody has rebased here in years.'],
+  ['This is production. Everything here is on fire.', 'The pager is already buzzing.', 'No staging, no safety net, no sleep.'],
+  ['The code in these mountains is older than the hero.', 'COBOL echoes off the frozen peaks.', 'The ancients wrote it. Nobody dares change it.'],
+]
+export const ACT_OUTRO: string[][] = [
+  ['The first build passes. A small cheer goes up.', 'The cellar is quiet. The node_modules settle.', 'Act I ships. Nobody reads the release notes.'],
+  ['The dependency wars end in an uneasy lockfile.', 'Peace at last, until the next major version.', 'The pyramids stop arguing about semver.'],
+  ['The merge goes through. The swamp sighs.', 'HEAD is attached again. Mostly.', 'The marshes drain. The conflicts rest, for now.'],
+  ['The incident is closed. The postmortem begins.', 'Production is calm. Nobody touch anything.', 'The pager falls silent. The hero sleeps, for once.'],
+  ['The debt is paid. Some of it. A little.', 'The mountains go quiet. The mainframe hums on.', 'The legacy holds. The hero walks on into the Atlas.'],
+]
+
+/** task-12 slice: a title from the gear, weapon base (rows, BASES.weapon order) by off-hand base (BASES.offhand order, then none). Words only. */
+export const TITLES: string[][] = [
+  ['Vanguard', 'Pair Programmer', 'Keymancer', 'Hotkey Ranger', 'Prompt Engineer', 'Berserker'],
+  ['Rubber Duck Debugger', 'Stack Sage', 'Voidcaster', 'Breakpoint Hunter', 'Lightmender', 'Staff Engineer'],
+  ['Cogslinger', 'Hardware Hacker', 'Embermage', 'Sparkshot', 'Firmware Druid', 'Tinkerer'],
+  ['Crimson Duelist', 'Network Warden', 'Packet Witch', 'Twinfang', 'Pactbinder', 'Harvester'],
+  ['Skylancer', 'Incident Commander', 'Trace Oracle', 'Shadowstep', 'Merge Conflict Monk', 'Ronin'],
+  ['Paladin of Prod', 'Refactor Knight', 'Vibe Coder', 'Whack-a-Mole Ranger', 'YAML Shaman', 'Smashwright'],
+  ['Slide Deck Templar', 'Scrum Master', 'Laser Mystic', 'Ranger', 'Necromancer of Slides', 'Pointer Savant'],
+]
+/** Birth labels, rolled once from the hero's seed and never changed. Words only, no power. */
+export const ANCESTRY = ['Hermit', 'Coconut', 'King', 'Fiddler', 'Snow', 'Spider', 'Ghost', 'Horseshoe', 'Soft-shell', 'Imitation', 'Rustacean', 'Yeti', 'Decorator', 'Robber', 'Boxer', 'Pea', 'Blue', 'Mud', 'Pom-pom', 'Sponge', 'Arrow', 'Porcelain', 'Velvet', 'Pebble']
+export const PROFESSIONS = ['Grave Accountant', 'Tide Notary', 'Barnacle Dentist', 'Kelp Sommelier', 'Sandcastle Inspector', 'Driftwood Appraiser', 'Pearl Auditor', 'Seagull Negotiator', 'Moonlight Lifeguard', 'Puddle Surveyor', 'Shell Realtor', 'Bubble Archivist', 'Lighthouse Intern', 'Plankton Shepherd', 'Coral Landlord', 'Wave Forecaster', 'Tidepool Mayor', 'Anchor Polisher', 'Bottle Mail Courier', 'Buoy Philosopher', 'Bait Shop Poet', 'Reef Librarian', 'Fog Collector', 'Shipwreck Tour Guide', 'Salt Critic', 'Barnacle Barber', 'Clam Therapist', 'Starfish Tailor', 'Treasure Map Proofreader', 'Jetty Night Watch', 'Seashell Cartographer', 'Squid Ink Calligrapher', 'Pier Fortune Teller', 'Low Tide Lawyer', 'Sea Foam Chemist', 'Ferry Mime', 'Urchin Babysitter', 'Dock Choir Tenor', 'Rockpool Plumber', 'Lagoon Swim Coach']
+export const PERSONALITIES = ['Unreasonably Brave', 'Suspicious of Seagulls', 'Chronically Early', 'Quietly Smug', 'Easily Delighted', 'Afraid of Semicolons', 'Overly Polite', 'Dramatic About Sand', 'Relentlessly Optimistic', 'Mildly Cursed', 'Secretly Sentimental', 'Allergic to Meetings', 'Proud of Nothing', 'Loud at Dawn', 'Fond of Puns', 'Always Snacking', 'Never Lost, Allegedly', 'Deeply Unbothered', 'Competitive About Naps', 'Collects Bottle Caps', 'Nervous Around Tides', 'Too Honest', 'A Sideways Thinker', 'Hums While Fighting', 'Holds Grudges Briefly', 'Afraid of Crabs', 'Loves Paperwork', 'Bad at Goodbyes', 'Stubbornly Cheerful', 'Sleeps Through Alarms', 'Talks to Rocks', 'Trusts Every Map', 'Always Overpacks', 'Never Reads the Manual', 'Polite to Bosses', 'Writes Everything Down', 'Hoards Spoons', 'Counts Everything', 'Believes in Ghosts', 'Waves at Strangers']
+/** The crab's idle quips (task-13): one on reaching the campfire, one on heading out to gather. Picked by the clock. */
+export const CAMP_QUIPS = ['Fire first. Then feelings.', 'My claws are tired. My spirit is also tired.', 'Nobody tell the bugs where I camp.', 'I fought for hours. Now I toast things.', 'Sideways is still forward if you believe.', 'This fire has better uptime than prod.', 'Snacks now. Heroics later.', 'I could go on. I will not.', 'One more fight? No. Marshmallows.', 'The shell is cozy. The fire is cozier.', 'Somewhere a test is failing. Not my problem tonight.', 'I deserve this rest. The logs agree.', 'A crab never stops. Except right now.', 'The stars look like stack traces from here.', 'I wonder if fish think about me too.', 'Shh. The fire is compiling.', 'Rest is a feature, not a bug.', 'Taking five. Possibly six.', 'If anyone needs me, I am a pile of shell.', 'Ten minutes. Then I check my bag again.']
+export const GATHER_QUIPS = ['Enough sitting. Time to poke rocks.', 'The fish will not catch themselves.', 'Let us see what the dirt is hiding.', 'Idle claws are a bug factory.', 'Back to work. The relaxing kind.', 'I hear ore calling. It sounds shiny.', 'Hobbies are just side quests with snacks.', 'A little gathering never hurt anyone.', 'Somewhere out there is a better rod.', 'Shell on, boots on, let us go.', 'Off to find treasure. Or mud. Probably mud.', 'Rested enough. Mostly.']
+/** Nemesis (a foe that beat the crab comes back): its epithet, what it says on return, and the crab's line on revenge. Picked by the clock. */
+export const NEMESIS_EPITHETS = ['the Smug', 'Who Laughed', 'the Unforgiven', 'of the Cheap Shot', 'the Gloater', 'Who Saw It Coming', 'the Lucky', 'the Unbothered', 'the Petty', 'Who Took Your Lunch', 'the Merciless', 'of Many Grudges', 'the Insufferable', 'Who Never Logs Off', 'the Overconfident', 'the Rude', 'of the Last Laugh', 'the Snickering', 'Who Read Your Diff', 'the Blamer', 'the Unpatched', 'of the Hot Take', 'the Spiteful', 'Who Counted Your Retries']
+export const NEMESIS_BACK = ['Remember me?', 'Back for seconds.', 'I kept your gold warm.', 'Round two. Same result.', 'I told everyone about last time.', 'Still walking sideways, I see.', 'Did you patch yourself?', 'I have been practicing.', 'Long time no crit.', 'This time I brought snacks.', 'You again. Good.', 'I never forget a shell.']
+/** A pet's reaction to a level-up or a boss kill; $ is the pet's name. Picked by the clock. */
+export const PET_CHEERS = ['$ does a little victory hop.', '$ chirps the build-passed song.', '$ chews on the loot table.', '$ files a bug against the boss. Status: fixed.', '$ is very proud of you. Mostly of itself.', '$ celebrates by knocking a mug off the desk.',
+  '$ takes full credit.', '$ spins three times and lies down.', '$ approves this merge.', '$ tries to high-five a claw.', '$ sniffs the loot. Smells rare.', '$ squeaks in a major key.', '$ writes LGTM in the dirt.', '$ does zoomies around the camp.',
+  '$ looks at the boss, then at you, then at the boss.', '$ wants a treat. It has earned a treat.']
+export const REVENGE_LINES = ['That one was personal.', 'Grudge closed. Ticket resolved.', 'Who is laughing now? Me. Sideways.', 'Score settled. Shell polished.', 'Merged. Conflict resolved.', 'Nobody beats me twice. Well, once.', 'And stay deprecated.', 'I am writing this one in my diary.', 'Finally. My claws remember.', 'That felt better than a green build.', 'Payback, with interest.', 'Revenge, served at room temperature.']
+/** Win streak callouts: fights won in a row without a death. */
+export const STREAKS: [number, string][] = [[100, 'On a Roll'], [250, 'Hot Streak'], [500, 'No Bugs Survive'], [1000, 'Five Nines'], [2500, 'Zero Downtime']]
